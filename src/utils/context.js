@@ -1,12 +1,11 @@
-import React, { useState, useContext, useReducer, useEffect } from 'react'
-import cartItems from './data'
+import React, { useContext, useReducer, useEffect } from 'react'
 import reducer from './reducer'
 
 const url = 'https://course-api.com/react-useReducer-cart-project'
 const AppContext = React.createContext()
 const initialState = { 
         isLoading: false, 
-        cart: cartItems,
+        cart: [],
         total: 0,
         amount: 0
     }
